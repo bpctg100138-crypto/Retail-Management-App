@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'DM Sans', 'Noto Sans Bengali', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Bengali', system-ui, sans-serif;
+  }
+
+  .font-mono-num {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #thermal-receipt-print, #thermal-receipt-print * {
+    visibility: visible;
+  }
+  #thermal-receipt-print {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}

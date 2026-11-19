@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Standard USB HID Keyboard / POS Barcode Scanners (Class 3 = HID) -->
+    <usb-device class="3" />
+</resources>

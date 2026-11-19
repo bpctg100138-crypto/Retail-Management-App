@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">বাজারPOS</string>
+    <string name="nav_dashboard">ড্যাশবোর্ড</string>
+    <string name="nav_pos">বিক্রয় (POS)</string>
+    <string name="nav_products">পণ্য</string>
+    <string name="nav_vendors">ভেন্ডর</string>
+    <string name="nav_categories">ক্যাটাগরি</string>
+    <string name="nav_stock">স্টক</string>
+    <string name="nav_reports">রিপোর্ট</string>
+    <string name="nav_bills">বিল হিস্ট্রি</string>
+    <string name="nav_settings">সেটিংস</string>
+    <string name="policy_en">Products may be exchanged within 3 days of purchase with the original bill. No cash refund is available.</string>
+    <string name="policy_bn">ক্রয়ের ৩ দিনের মধ্যে মূল বিলসহ পণ্য এক্সচেঞ্জ করা যাবে। কোনো নগদ টাকা ফেরত দেওয়া হবে না।</string>
+    <string name="setup_title">অ্যাডমিনিস্ট্রেটর পাসওয়ার্ড সেট করুন</string>
+    <string name="setup_subtitle">বিল বাতিল, ডিসকাউন্ট, স্টক পরিবর্তন ও সংবেদনশীল অপারেশন সুরক্ষিত রাখতে পাসওয়ার্ড তৈরি করুন।</string>
+</resources>

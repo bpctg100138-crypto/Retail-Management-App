@@ -1,0 +1,6 @@
+{
+  "name": "BazarPOS — Offline Retail & POS Suite",
+  "description": "Complete offline-first Android Retail Management & Point of Sale application (Kotlin, Jetpack Compose, Room) with interactive web POS simulator and downloadable Android Studio project.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
