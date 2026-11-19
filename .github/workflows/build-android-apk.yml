@@ -1,5 +1,5 @@
 
-name: Build MY STORE Android APK
+name: Build BazarPOS Android APK
 
 on:
   workflow_dispatch:
@@ -13,34 +13,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-
-      - name: Setup Java
+      - name: Setup Java 17
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 21
+          java-version: 17
 
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build web application
-        run: npm run build
-
-      - name: Sync Capacitor Android
-        run: npx cap sync android
-
-      - name: Build debug APK
-        working-directory: android
+      - name: Build Debug APK
+        working-directory: android-pos
         run: |
           chmod +x gradlew
           ./gradlew assembleDebug
@@ -48,6 +31,6 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: my-store-debug-apk
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          name: BazarPOS-debug-APK
+          path: android-pos/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
